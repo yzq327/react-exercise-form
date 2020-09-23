@@ -1,13 +1,15 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.less';
 import MyProfile from "./components/MyProfile";
 
-const App = () => {
-  return (
-    <div className='App'>
-      <MyProfile/>
-    </div>
-  );
-};
+class App extends Component  {
+  render() {
+    return (
+      <main className="app">
+        <MyProfile />       
+      </main>
+    );
+  }
+}
 
 export default App;
